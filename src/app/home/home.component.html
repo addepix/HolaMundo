@@ -1,8 +1,0 @@
-<h3>Buscar en ML</h3>
-<div id="searchContainer">
-    <p>Producto a buscar:</p>
-    <input [(ngModel)]="textToSearch" required>
-    <button id="btnSearch" (click)="buttonClicked()">Buscar</button>
-</div>
-<br><br>
-<div [innerHTML]="response | prettyjson"></div>

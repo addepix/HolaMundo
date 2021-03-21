@@ -1,0 +1,21 @@
+.thumbnail {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.mat-table {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.mat-header-cell, .mat-header-row {
+    background-color: #232833;
+    color: #65737e;
+    font-size: 14px;
+}
+
+.mat-cell, .mat-row {
+    background-color: #2b303b;
+    color: #65737e;
+}

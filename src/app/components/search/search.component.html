@@ -1,0 +1,8 @@
+<div class="box">
+    <div class="search_wrapper">
+        <input #search type="search" id="search" placeholder="Buscar productos, marcas y más…" maxlength="120" required>
+        <button class="icon" (click)="buttonClicked(search.value)"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+<app-search-result *ngIf="products.length > 0" [(products)]="products" (selectedProduct)="onProductSelection($event)"></app-search-result>
+<app-item-detail *ngIf="productId" [productId]="productId"></app-item-detail>

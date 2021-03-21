@@ -1,0 +1,30 @@
+<div>              
+    <mat-table [dataSource]="products" class="mat-elevation-z8">
+        <!-- Image Column -->
+        <ng-container matColumnDef="image">
+            <mat-header-cell *matHeaderCellDef> Imagen </mat-header-cell>
+            <mat-cell *matCellDef="let product"> <img src="{{product.image}}" class="thumbnail"> </mat-cell>
+        </ng-container>
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+            <mat-cell *matCellDef="let product"> <a routerLink="" (click)="onClickDetail(product.id)">{{product.id}}</a> </mat-cell>
+        </ng-container>
+
+        <!-- Title Column -->
+        <ng-container matColumnDef="title">
+            <mat-header-cell *matHeaderCellDef> Título </mat-header-cell>
+            <mat-cell *matCellDef="let product"> {{product.title}}</mat-cell>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="price">
+            <mat-header-cell *matHeaderCellDef> Precio </mat-header-cell>
+            <mat-cell *matCellDef="let product"> {{product.price | number:'1.2':'es-AR'}}</mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="['image', 'id', 'title', 'price']"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['image', 'id', 'title', 'price'];"></mat-row>
+    </mat-table>
+</div>
