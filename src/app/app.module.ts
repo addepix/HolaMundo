@@ -8,6 +8,7 @@ import { AppComponent } from './components/app/app.component';
 import { PrettyjsonPipe } from './pipes/prettyjson.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card'
 import { registerLocaleData } from '@angular/common';
 
 // importar locales
@@ -33,7 +34,8 @@ registerLocaleData(localeEsAr, 'es-Ar');
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

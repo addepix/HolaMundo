@@ -1,2 +1,12 @@
-<p>item-detail works!</p>
-<div [innerHTML]="productId"></div>
+<mat-card class="product-card">
+    <mat-card-header>
+      <div mat-card-avatar class="product-header-image" style="background-image: url('{{product.thumbnail}}');"></div>
+      <mat-card-title>{{product.title}}</mat-card-title>
+      <mat-card-subtitle>$ {{product.price | number:'1.2':'es-AR'}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{product.image}}" alt="Image">
+    <mat-card-content>
+        <h3>Descripción</h3>
+      <p>{{product.description}}</p>
+    </mat-card-content>
+</mat-card>

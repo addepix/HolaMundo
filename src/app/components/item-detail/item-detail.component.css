@@ -1,0 +1,19 @@
+.product-card {
+    margin: 50px auto;
+    max-width: 400px;
+}
+  
+.product-header-image {
+    /*background-image: url('');*/
+    background-size: cover;
+}
+
+.mat-card-image {
+    margin: 50px auto;
+    max-width: 120px;
+}
+
+.mat-card-content p {
+    text-align: justify;
+    text-justify: inter-word;
+}

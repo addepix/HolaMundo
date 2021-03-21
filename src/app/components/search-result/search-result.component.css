@@ -2,6 +2,10 @@
     margin: 10px;
     width: 70px;
     height: 70px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .mat-table {
